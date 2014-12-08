@@ -19,7 +19,7 @@ TARGET_BOOTLOADER_BOARD_NAME := D5803
 DEVICE_RESOLUTION := 720x1280
 
 # Recovery, ripped from https://github.com/louisrousseau/android_device_motorola_peregrine/blob/android-4.4/BoardConfig.mk
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.shiano
+TARGET_RECOVERY_FSTAB := device/sony/shiano/rootdir/etc/fstab.shiano
 #TWRP
 DEVICE_RESOLUTION := 720x1280
 RECOVERY_SDCARD_ON_DATA := true
