@@ -15,3 +15,5 @@
 include device/sony/shinano/BoardConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D5803
+
+DEVICE_RESOLUTION := 720x1280
