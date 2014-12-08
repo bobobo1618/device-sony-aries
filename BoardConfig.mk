@@ -17,3 +17,17 @@ include device/sony/shinano/BoardConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := D5803
 
 DEVICE_RESOLUTION := 720x1280
+
+# Recovery, ripped from https://github.com/louisrousseau/android_device_motorola_peregrine/blob/android-4.4/BoardConfig.mk
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.shiano
+#TWRP
+DEVICE_RESOLUTION := 720x1280
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := false
+#These flags are somewhat deprecated in TWRP 2.5+ but they are still used for a few things.
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+
+PRODUCT_COPY_FILES += device/sony/aries/twrp.fstab:recovery/root/etc/twrp.fstab
