@@ -22,11 +22,12 @@ $(call inherit-product-if-exists, vendor/sony/aries/aries-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk)
 PRODUCT_COPY_FILES += \
-device/sony/aries/rootdir/logo.rle:root/logo.rle \
-device/sony/aries/rootdir/system/etc/BCM4354.hcd:system/etc/firmware/BCM43xx.hcd \
-device/sony/aries/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
-device/sony/aries/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-device/sony/aries/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
+	device/sony/aries/rootdir/logo.rle:root/logo.rle \
+	device/sony/aries/rootdir/system/etc/BCM4354.hcd:system/etc/firmware/BCM43xx.hcd \
+	device/sony/aries/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
+	device/sony/aries/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+	device/sony/aries/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
+
 PRODUCT_NAME := omni_d5803
 PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Sony
@@ -34,4 +35,4 @@ PRODUCT_MODEL := Xperia Z3 Compact (Omni)
 PRODUCT_LOCALES += xhdpi hdpi
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.sf.lcd_density=320
+	ro.sf.lcd_density=320
